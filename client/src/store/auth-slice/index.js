@@ -12,7 +12,7 @@ export const registerUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://mera-bestie-six.vercel.app/auth/register",
+      "https://mera-bestie-six.vercel.app/api/auth/register",
       formData,
       {
         withCredentials: true,
@@ -28,7 +28,7 @@ export const loginUser = createAsyncThunk(
 
   async (formData) => {
     const response = await axios.post(
-      "https://mera-bestie-six.vercel.app/auth/login",
+      "https://mera-bestie-six.vercel.app/api/auth/login",
       formData,
       {
         withCredentials: true,
@@ -44,7 +44,7 @@ export const logoutUser = createAsyncThunk(
 
   async () => {
     const response = await axios.post(
-      "https://mera-bestie-six.vercel.app/auth/logout",
+      "https://mera-bestie-six.vercel.app/api/auth/logout",
       {},
       {
         withCredentials: true,
@@ -60,7 +60,7 @@ export const checkAuth = createAsyncThunk(
 
   async () => {
     const response = await axios.get(
-      "https://mera-bestie-six.vercel.app/auth/check-auth",
+      "https://mera-bestie-six.vercel.app/api/auth/check-auth",
       {
         withCredentials: true,
         headers: {
