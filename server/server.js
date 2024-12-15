@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 5001;
 
 app.use(
   cors({
-    origin: ["https://mera-bestie-frontend.vercel.app"],
+    origin: ["https://mera-bestie-frontend.vercel.app/auth/logino"],
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type",
