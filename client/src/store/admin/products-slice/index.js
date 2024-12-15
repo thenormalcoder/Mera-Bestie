@@ -10,7 +10,7 @@ export const addNewProduct = createAsyncThunk(
   "/products/addnewproduct",
   async (formData) => {
     const result = await axios.post(
-      "https://mera-bestie-six.vercel.app/admin/products/add",
+      "https://mera-bestie-six.vercel.app/api/admin/products/add",
       formData,
       {
         headers: {
@@ -27,7 +27,7 @@ export const fetchAllProducts = createAsyncThunk(
   "/products/fetchAllProducts",
   async () => {
     const result = await axios.get(
-      "https://mera-bestie-six.vercel.app/admin/products/get"
+      "https://mera-bestie-six.vercel.app/api/admin/products/get"
     );
 
     return result?.data;
