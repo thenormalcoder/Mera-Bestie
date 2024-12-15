@@ -10,7 +10,7 @@ export const getFeatureImages = createAsyncThunk(
   "/order/getFeatureImages",
   async () => {
     const response = await axios.get(
-      `https://mera-bestie-six.vercel.app/common/feature/get`
+      `https://mera-bestie-six.vercel.app/api/common/feature/get`
     );
 
     return response.data;
@@ -21,7 +21,7 @@ export const addFeatureImage = createAsyncThunk(
   "/order/addFeatureImage",
   async (image) => {
     const response = await axios.post(
-      `https://mera-bestie-six.vercel.app/common/feature/add`,
+      `https://mera-bestie-six.vercel.app/api/common/feature/add`,
       { image }
     );
 
